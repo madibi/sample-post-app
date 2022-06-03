@@ -1,0 +1,58 @@
+@import "core";
+
+.master {
+  display: block;
+  margin: 20px auto 0;
+  width: 100%;
+  max-width: 800px;
+  height: calc(100vh - 40px);
+
+  > .out-side {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  > header {
+    border-bottom: solid 3px $foregroundColorMain;
+    justify-content: flex-start;
+
+    @media only screen and (max-width: 550px){
+      border-color: transparent;
+      justify-content: center;
+    }
+  }
+
+  > footer {
+    border-top: solid 3px $foregroundColorMain;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 550px){
+      border-color: transparent;
+      justify-content: center;
+    }
+  }
+
+  > .content {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+
+    @media only screen and (max-width: 550px){
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 3px;
+        background-color: $foregroundColorMain;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+    }
+  }
+}

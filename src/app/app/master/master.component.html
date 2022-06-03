@@ -1,0 +1,17 @@
+
+<div class="master">
+  <header class="out-side">
+    <app-icon
+      [color]="'normal'"
+      [name]="'home-fill'"
+      [size]="'large'"
+      [routerLink]="'/home'"></app-icon>
+  </header>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+  <footer class="out-side">
+    <app-theme-toggle></app-theme-toggle>
+  </footer>
+</div>
+

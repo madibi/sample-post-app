@@ -1,0 +1,24 @@
+@import "core";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  > body {
+    background-color: $pageBackground;
+  }
+}
+
+label {
+  color: $foregroundColorMain;
+  font-family: tahoma;
+  width: 100%;
+  display: block;
+}
+
+[class^="app-icon-"]:before,
+[class*=" app-icon-"]:before {
+  color: inherit;
+}

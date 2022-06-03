@@ -1,0 +1,10 @@
+<div class="wrapper" *ngIf="(post$ | async)">
+  <div class="section top">
+    <label class="label">TITLE</label>
+    <textarea class="title" [ngModel]="(post$ | async)?.title"></textarea>
+  </div>
+  <div class="section bottom">
+    <label class="label">BODY</label>
+    <textarea class="body" [ngModel]="(post$ | async)?.body"></textarea>
+  </div>
+</div>

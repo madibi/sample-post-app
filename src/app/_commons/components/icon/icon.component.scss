@@ -1,0 +1,32 @@
+@import 'core';
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  > span {
+
+    // sizes
+    &.small {
+      font-size: 15px;
+    }
+    &.medium {
+      font-size: 22px;
+    }
+    &.large {
+      font-size: 30px;
+    }
+
+    // colors
+    &.normal {
+      color: $foregroundColorMain;
+      transition: all .3s linear;
+
+      &:hover {
+        color: $alternativeColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+
+<div class="panel">
+  <div class="side left">
+    <div class="wrapper">
+      <input type="number" [(ngModel)]="postId" />
+    </div>
+
+    <div class="wrapper">
+      <app-button [display]="'block'" (click)="onGetPstById()">Enter Post ID</app-button>
+    </div>
+  </div>
+  <div class="wrapper">
+    <label class="or">OR</label>
+  </div>
+  <div class="side right">
+    <div class="wrapper">
+      <app-button [display]="'block'" [routerLink]="'/posts'">Get All Posts</app-button>
+    </div>
+  </div>
+</div>

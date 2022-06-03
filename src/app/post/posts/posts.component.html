@@ -1,0 +1,8 @@
+
+<div class="wrapper" *ngIf="(posts$ | async)">
+  <div class="title"
+       [routerLink]="['/posts', post.id]"
+       *ngFor="let post of (posts$ | async)">
+    {{post.title}}
+  </div>
+</div>

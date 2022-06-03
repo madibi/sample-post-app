@@ -1,0 +1,24 @@
+@import 'core';
+
+.wrapper {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 10px;
+
+  > .title {
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: $backgroundColorMain;
+    color: $foregroundColorMain;
+    border: solid 3px $foregroundColorMain;
+    border-radius: 6px;
+    min-height: 30px;
+    font-family: tahoma;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    &:hover {
+      border-color: $alternativeColor;
+    }
+  }
+}

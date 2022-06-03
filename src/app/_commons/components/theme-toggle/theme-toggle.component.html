@@ -1,0 +1,13 @@
+<app-icon
+  [color]="'normal'"
+  [name]="'light'"
+  [size]="'large'"
+  (click)='toggleMode()'
+  *ngIf="isDark"></app-icon>
+<app-icon
+  [color]="'normal'"
+  [name]="'dark'"
+  [size]="'large'"
+  (click)='toggleMode()'
+  *ngIf="isLight"></app-icon>
+

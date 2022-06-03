@@ -1,0 +1,35 @@
+@import 'core';
+
+button {
+  min-height: 26px;
+  line-height: 26px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all .3s linear;
+  cursor: pointer;
+
+  &.inline {
+
+  }
+
+  &.block {
+    width: 100%;
+  }
+
+  &.normal {
+    color: $backgroundColorMain;
+    background-color: $foregroundColorMain;
+    font-size: 1.1rem;
+  }
+
+  &:disabled {
+
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $alternativeColor;
+  }
+}
